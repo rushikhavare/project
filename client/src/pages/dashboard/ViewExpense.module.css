@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.head,
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 0.5fr 0.5fr;
+    width: 100%;
+    border-bottom: 1px solid #181818;
+    padding: 10px 0px;
+}
+
+.head {
+    font-weight: bold;
+    background-color: #f9f9f9;
+    padding: 20px 0px;
+}
+
+.cell {
+    align-self: center;
+    word-break: break-word;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.body {
+    flex: 1;
+}
+
+.editBtn, .deleteBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editBtn {
+  background-color: #333333;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #000000;
+}
+
+.deleteBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #d32f2f;
+}
